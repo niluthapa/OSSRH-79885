@@ -1,0 +1,5 @@
+2022-03-25 09:26:06.823 [main] DEBUG org.poc.App - We've just greeted the user!
+2022-03-25 09:26:06.829 [main] INFO  org.poc.App - We've just greeted the user!
+2022-03-25 09:26:06.829 [main] WARN  org.poc.App - We've just greeted the user!
+2022-03-25 09:26:06.829 [main] ERROR org.poc.App - We've just greeted the user!
+2022-03-25 09:26:06.829 [main] FATAL org.poc.App - We've just greeted the user!

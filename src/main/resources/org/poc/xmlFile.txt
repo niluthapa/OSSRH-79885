@@ -1,0 +1,1 @@
+There are multiple ways of writing and reading a text file. this is required while dealing with mule

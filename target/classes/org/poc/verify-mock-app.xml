@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+	<flow name="verify-mock-appFlow"             >
+		<http:listener doc:name="Listener"       config-ref="HTTP_Listener_config" path="/vma"/>
+		<flow-ref doc:name="Flow Reference"      name="verify-mock-appFlow1" targetValue="#[vars.a]"/>
+		<logger level="INFO" doc:name="Logger" />
+		<ee:transform doc:name="Transform Message"  >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+{
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+
